@@ -59,9 +59,22 @@ Payments are tracked for both membership renewals and personal sessions.
 ---
 
 # Scenario B: City Library Event & Book Lending System
-@@ -68,27 +80,38 @@ The Central Library wants to manage book lending and cultural events.
 
-![ER Diagram](er_diagram_library.png)
+**Business Context:**  
+The Central Library wants to manage book lending and cultural events.
+
+**Requirements:**  
+- Members borrow books, with loan and return dates tracked.  
+- Each book has title, author, and category.  
+- Library organizes events; members can register.  
+- Each event has one or more speakers/authors.  
+- Rooms are booked for events and study.  
+- Overdue fines apply for late returns.
+
+### ER Diagram:
+
+<img width="493" height="705" alt="image" src="https://github.com/user-attachments/assets/83a24ab5-b776-415c-9150-f70fa8f8a034" />
+
 
 ### Entities and Attributes
 
@@ -101,8 +114,24 @@ Payments are tracked for both membership renewals and personal sessions.
 6.Speakers are independent entities .
 
 ---
+# Scenario C: Restaurant Table Reservation & Ordering
 
-@@ -111,26 +134,47 @@ A popular restaurant wants to manage reservations, orders, and billing.
+**Business Context:**  
+A popular restaurant wants to manage reservations, orders, and billing.
+
+**Requirements:**  
+- Customers can reserve tables or walk in.  
+- Each reservation includes date, time, and number of guests.  
+- Customers place food orders linked to reservations.  
+- Each order contains multiple dishes; dishes belong to categories (starter, main, dessert).  
+- Bills generated per reservation, including food and service charges.  
+- Waiters assigned to serve reservations.
+
+### ER Diagram:
+
+<img width="498" height="705" alt="image" src="https://github.com/user-attachments/assets/594e5d5d-4235-4e5f-b75a-fa1426ea5d8c" />
+
+
 
 ### Entities and Attributes
 

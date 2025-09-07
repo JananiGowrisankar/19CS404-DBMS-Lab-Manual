@@ -15,18 +15,12 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 - Attendance recorded for each session.  
 - Payments tracked for memberships and sessions.
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
+
+<img width="492" height="699" alt="image" src="https://github.com/user-attachments/assets/dec31a12-3c5c-43ef-bc6a-9d5e41a63176" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
 | **Entity**                      | **Attributes (PK, FK)**                                                                      | **Notes**                                                 |
 | ------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | **Member**                      | MemberID (PK), Name, MembershipType, StartDate                                               | Stores gym members and their memberships                  |
@@ -39,11 +33,6 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
 | Relationship       | Cardinality             | Participation                     | Notes                                                                           |
 | ------------------ | ----------------------- | --------------------------------- | ------------------------------------------------------------------------------- |
 | Member–Program     | M\:N via MemberProgram  | Member: Partial, Program: Partial | A member can join many programs, a program can have many members                |
@@ -55,9 +44,7 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 
 ### Assumptions
-- 
-- 
-- 
+
 1.Each member has exactly one active membership, tracked by MembershipType and StartDate.
 
 2.A program can exist even if no members have joined it yet.
@@ -73,17 +60,12 @@ Payments are tracked for both membership renewals and personal sessions.
 
 # Scenario B: City Library Event & Book Lending System
 @@ -68,27 +80,38 @@ The Central Library wants to manage book lending and cultural events.
+
 ![ER Diagram](er_diagram_library.png)
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+
 | **Entity**  | **Attributes (PK, FK)**                                                                            | **Notes**                               |
 | ----------- | -------------------------------------------------------------------------------------------------- | --------------------------------------- |
 | **Member**  | MemberID (PK), Name, ContactInfo                                                                   | Stores library members                  |
@@ -95,11 +77,6 @@ Payments are tracked for both membership renewals and personal sessions.
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
 | Relationship    | Cardinality                | Participation                | Notes                                                                                            |
 | --------------- | -------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------ |
 | Member – Loan   | 1\:N                       | Member: Partial, Loan: Total | A member can borrow many books; each loan tied to one member                                     |
@@ -110,9 +87,7 @@ Payments are tracked for both membership renewals and personal sessions.
 
 
 ### Assumptions
-- 
-- 
-- 
+
 1.Each book is borrowed by only one member at a time.
 
 2.Fines are recorded in the Loan entity and apply only if the return date is after the due date.
@@ -131,13 +106,6 @@ Payments are tracked for both membership renewals and personal sessions.
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
 | Entity          | Attributes (PK, FK)                                                                     | Notes                                                                  |
 | --------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | **Customer**    | CustomerID (PK), Name, ContactInfo                                                      | Customers may reserve tables or walk in                                |
@@ -153,11 +121,6 @@ Payments are tracked for both membership renewals and personal sessions.
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
 | Relationship           | Cardinality | Participation                         | Notes                                                  |
 | ---------------------- | ----------- | ------------------------------------- | ------------------------------------------------------ |
 | Customer – Reservation | 1\:N        | Customer: Partial, Reservation: Total | A customer can have multiple reservations              |
@@ -171,9 +134,7 @@ Payments are tracked for both membership renewals and personal sessions.
 
 
 ### Assumptions
-- 
-- 
-- 
+
 1.A customer must exist before making a reservation.
 
 2.Walk-in customers are recorded as reservations with immediate start time.

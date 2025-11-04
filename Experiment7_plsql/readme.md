@@ -36,6 +36,9 @@ END;
 
 ### PL/SQL QUERY
 ```
+NAME: Janani G
+REGISTER NO:212224100022
+
 SET SERVEROUTPUT ON;
 
 DECLARE
@@ -72,6 +75,9 @@ Greater number is: 80
 ### PL/SQL QUERY
 
 ```
+NAME: Janani G
+REGISTER NO:212224100022
+
 SET SERVEROUTPUT ON;
 
 DECLARE
@@ -105,6 +111,9 @@ Sum of first 10 natural numbers is: 55
 
 ### PL/SQL QUERY
 ```
+NAME: Janani G
+REGISTER NO:212224100022
+
 SET SERVEROUTPUT ON;
 
 DECLARE
@@ -146,6 +155,9 @@ Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 ### PL/SQL QUERY
 
 ```
+NAME: Janani G
+REGISTER NO:212224100022
+
 SET SERVEROUTPUT ON;
 
 DECLARE
@@ -183,6 +195,9 @@ Reversed number is 5351
 ### PL/SQL QUERY
 
 ```
+NAME: Janani G
+REGISTER NO:212224100022
+
 SET SERVEROUTPUT ON;
 
 DECLARE
@@ -211,3 +226,4 @@ Largest of three number is 15
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
+

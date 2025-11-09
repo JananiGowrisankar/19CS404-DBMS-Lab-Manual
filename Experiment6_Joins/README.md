@@ -227,7 +227,5 @@ ORDER BY o.ord_date ASC ;```
 
 <img width="1347" height="716" alt="image" src="https://github.com/user-attachments/assets/94e62856-1254-426f-b3f6-d28a92628e0e" />
 
-
-
-## RESULT
+**RESULT**
 Thus, the SQL queries to implement different types of joins have been executed successfully.

@@ -221,7 +221,8 @@ INNER JOIN patients p ON a.patient_id=p.patient_id;
 SELECT c.cust_name,c.city,o.ord_no,o.ord_date,o.purch_amt AS "Order Amount"
 FROM customer c
 LEFT JOIN orders o ON c.customer_id=o.customer_id
-ORDER BY o.ord_date ASC ;```
+ORDER BY o.ord_date ASC ;
+```
 
 **Output:**
 
